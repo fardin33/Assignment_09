@@ -106,7 +106,7 @@ const Navbar = ({ user, handleLogout }) => {
           )}
         </div>
 
-        <div className="hidden md:flex items-center gap-3 relative shrink-0">
+        <div className="hidden md:flex items-center gap-6 relative shrink-0">
           <button
             onClick={handleThemeToggle}
             className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-[#006B4F]/25 bg-white/20 text-[#006B4F] backdrop-blur-md transition hover:bg-white/40 dark:bg-[#1e3a8a]/70 dark:text-[#F6F0E4] dark:hover:bg-[#1e40af]"
@@ -140,7 +140,7 @@ const Navbar = ({ user, handleLogout }) => {
 
               <Link
                 href="/register"
-                className="px-5 py-2 rounded-full bg-[#10231b] dark:bg-[#F6F0E4] text-white dark:text-[#1e3a8a] text-sm font-semibold hover:bg-[#006B4F] transition">
+                className="px-5 py-2 rounded-full bg-[#006B4F] text-white text-sm font-semibold hover:bg-black transition duration-300 dark:bg-[#F6F0E4] dark:text-[#1e3a8a] dark:hover:bg-black dark:hover:text-white">
                 Register
               </Link>
             </>
@@ -282,7 +282,7 @@ const Navbar = ({ user, handleLogout }) => {
             )}
 
             {!user ? (
-              <div className="flex gap-3 pt-2">
+              <div className="flex gap-5 pt-2">
                 <Link
                   href="/login"
                   className="text-[#006B4F] dark:text-[#F6F0E4] font-semibold">
@@ -291,7 +291,7 @@ const Navbar = ({ user, handleLogout }) => {
 
                 <Link
                   href="/register"
-                  className="px-4 py-2 rounded-full bg-[#10231b] dark:bg-[#F6F0E4] text-white dark:text-[#1e3a8a]">
+                  className="px-4 py-2 rounded-full bg-[#006B4F] text-white hover:bg-black transition duration-300 dark:bg-[#F6F0E4] dark:text-[#1e3a8a] dark:hover:bg-black dark:hover:text-white">
                   Register
                 </Link>
               </div>
