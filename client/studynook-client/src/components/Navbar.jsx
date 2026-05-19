@@ -71,8 +71,8 @@ const Navbar = ({ user, handleLogout }) => {
     "text-base font-bold text-[#4f4a40] hover:text-[#006B4F] dark:text-[#F6F0E4] dark:hover:text-[#F6F0E4] transition";
 
   return (
-    <header className="sticky top-0 z-50 bg-transparent pt-4">
-      <nav className="w-11/13 mx-auto h-16 px-4 md:px-6 rounded-full dark:bg-[#1e3a8a]/60 border border-[#006B4F]/20 dark:border-[#F6F0E4]/20 backdrop-blur-xl shadow-sm flex items-center justify-between">
+    <header className=" sticky top-0 z-50 dark:bg-[#1e3a8a]  pt-4">
+      <nav className="w-11/13 mx-auto h-16 px-4 md:px-6 rounded-full border bg-transparent border-[#006B4F]/20 dark:border-[#F6F0E4]/20 backdrop-blur-xl shadow-sm flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <div className="w-9 h-9 rounded-full bg-[#006B4F] dark:bg-[#F6F0E4] flex items-center justify-center text-white dark:text-[#1e3a8a] font-bold">
             📖

@@ -36,7 +36,7 @@ const steps = [
 
 const BookingProcess = () => {
   return (
-    <section className="bg-[#ede8e0] dark:bg-[#1e3a8a] py-10 md:py-15 lg:py-25">
+    <section className="dark:bg-[#3962d5] py-10 md:py-15 lg:py-25">
       <div className="w-[84.615%] mx-auto">
         <div className="text-center max-w-2xl mx-auto">
           <span className="inline-flex rounded-full border border-[#006B4F]/25 bg-[#006B4F]/10 px-4 py-2 text-xs font-bold text-[#006B4F] dark:border-[#F6F0E4]/25 dark:bg-[#F6F0E4]/10 dark:text-[#F6F0E4]">
@@ -59,7 +59,7 @@ const BookingProcess = () => {
                 <div className="hidden md:block absolute top-1/2 -right-6 z-10 h-px w-6 bg-[#006B4F]/30" />
               )}
 
-              <div className="group relative h-full rounded-3xl border border-[#006B4F]/15 bg-[#f9f3e8]/70 p-8 text-center shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-[#006B4F]/40 hover:shadow-xl dark:bg-[#0f234f]/50 dark:border-[#F6F0E4]/15">
+              <div className="group relative h-full rounded-3xl border border-[#006B4F]/15 p-8 text-center shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-[#006B4F]/40 hover:shadow-xl dark:bg-[#0f234f]/50 dark:border-[#F6F0E4]/15">
                 <div className="relative mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#006B4F]/10 text-[#006B4F] transition duration-300 group-hover:bg-[#006B4F] group-hover:text-white dark:bg-[#F6F0E4]/10 dark:text-[#F6F0E4]">
                   {step.icon}
 
