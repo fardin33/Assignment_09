@@ -70,7 +70,7 @@ const Navbar = ({ user, handleLogout }) => {
   return (
     <>
       {/* FIXED NAVBAR */}
-      <header className="fixed top-0 left-0 right-0 z-[999] bg-transparent pt-4">
+      <header className="fixed top-0 left-0 right-0 z-999 bg-transparent pt-4">
         <nav className="relative w-11/12 mx-auto h-16 px-4 md:px-6 rounded-full border border-[#006B4F]/20 dark:border-[#F6F0E4]/20 bg-white/10 dark:bg-[#1e3a8a]/10 backdrop-blur-xl shadow-sm flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
@@ -185,7 +185,7 @@ const Navbar = ({ user, handleLogout }) => {
 
         {/* MOBILE MENU */}
         <div
-          className={`md:hidden absolute right-[4.5%] top-24 z-[999] w-[82%] max-w-sm rounded-2xl border border-[#006B4F]/20 bg-white/10 dark:bg-[#1e3a8a]/10 backdrop-blur-xl px-4 py-5 shadow-2xl transition-all duration-300 ease-out ${
+          className={`md:hidden absolute right-[4.5%] top-24 z-999 w-[82%] max-w-sm rounded-2xl border border-[#006B4F]/20 bg-white/10 dark:bg-[#1e3a8a]/10 backdrop-blur-xl px-4 py-5 shadow-2xl transition-all duration-300 ease-out ${
             mobileOpen
               ? "translate-x-0 opacity-100"
               : "translate-x-10 opacity-0 pointer-events-none"

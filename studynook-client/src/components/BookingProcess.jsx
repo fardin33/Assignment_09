@@ -44,8 +44,11 @@ const BookingProcess = () => {
           </span>
 
           <h2 className="mt-3.5 text-3xl md:text-5xl font-extrabold text-[#1f1b14] dark:text-[#F6F0E4]">
-            Smart Booking Process
-          </h2>
+         Smart Booking{" "}
+       <span className="text-[#006B4F] dark:text-[#7bc47f]">
+        Process
+  </span>
+</h2>
 
           <p className="mt-4 text-[#5f5a50] dark:text-[#F6F0E4]/75">
             From discovery to confirmation in 3 simple steps.

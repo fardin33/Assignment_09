@@ -1,4 +1,5 @@
 
+
 import Link from "next/link";
 
 const socials = [
@@ -29,7 +30,13 @@ const socials = [
   {
     label: "Instagram",
     icon: (
-      <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg
+        viewBox="0 0 24 24"
+        className="h-4 w-4"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+      >
         <rect x="4" y="4" width="16" height="16" rx="5" />
         <circle cx="12" cy="12" r="3.5" />
         <path d="M17.5 6.5h.01" />
@@ -42,52 +49,90 @@ const Footer = () => {
   return (
     <footer className="mt-12 border-t border-[#006B4F]/10 bg-[#ebfbec]">
       <div className="w-11/12 mx-auto py-10 md:py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-4 lg:gap-10">
           <div>
             <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#006B4F] text-white text-sm">
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#006B4F] text-sm font-bold text-white">
                 📖
               </div>
-              <h2 className="text-2xl font-serif text-[#1f1b14]">StudyNook</h2>
+
+              <h2 className="text-2xl font-serif font-bold text-[#1f1b14]">
+                StudyNook
+              </h2>
             </div>
 
-            <p className="mt-4 max-w-xs text-sm leading-6 text-[#5f5a50]">
+            <p className="mt-4 max-w-xs text-sm font-semibold leading-6 text-[#3f3a32]">
               The marketplace for focused study spaces. Find a quiet seat, book
               by the hour, never get double-booked.
             </p>
           </div>
 
-          <div>
-            <h3 className="text-sm font-bold text-[#1f1b14]">Explore</h3>
-            <div className="mt-4 flex flex-col gap-2.5 text-sm text-[#5f5a50]">
-              <Link href="/rooms" className="hover:text-[#006B4F] transition">Browse rooms</Link>
-              <Link href="/how-it-works" className="hover:text-[#006B4F] transition">How it works</Link>
-              <Link href="/add-room" className="hover:text-[#006B4F] transition">List a room</Link>
-              <Link href="/dashboard" className="hover:text-[#006B4F] transition">My dashboard</Link>
+          <div className="grid grid-cols-2 gap-8 sm:gap-10 lg:contents">
+            <div>
+              <h3 className="text-sm font-black text-[#1f1b14]">Explore</h3>
+
+              <div className="mt-4 flex flex-col gap-2.5 text-sm font-semibold text-[#3f3a32]">
+                <Link href="/rooms" className="hover:text-[#006B4F] transition">
+                  Browse rooms
+                </Link>
+
+                <Link
+                  href="/how-it-works"
+                  className="hover:text-[#006B4F] transition"
+                >
+                  How it works
+                </Link>
+
+                <Link
+                  href="/add-room"
+                  className="hover:text-[#006B4F] transition"
+                >
+                  List a room
+                </Link>
+
+                <Link
+                  href="/dashboard"
+                  className="hover:text-[#006B4F] transition"
+                >
+                  My dashboard
+                </Link>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-black text-[#1f1b14]">Company</h3>
+
+              <div className="mt-4 flex flex-col gap-2.5 text-sm font-semibold text-[#3f3a32]">
+                <Link href="/" className="hover:text-[#006B4F] transition">
+                  About us
+                </Link>
+
+                <Link href="/" className="hover:text-[#006B4F] transition">
+                  Contact
+                </Link>
+
+                <Link href="/" className="hover:text-[#006B4F] transition">
+                  Trust & safety
+                </Link>
+
+                <Link href="/" className="hover:text-[#006B4F] transition">
+                  Terms & privacy
+                </Link>
+              </div>
             </div>
           </div>
 
           <div>
-            <h3 className="text-sm font-bold text-[#1f1b14]">Company</h3>
-            <div className="mt-4 flex flex-col gap-2.5 text-sm text-[#5f5a50]">
-              <Link href="/" className="hover:text-[#006B4F] transition">About us</Link>
-              <Link href="/" className="hover:text-[#006B4F] transition">Contact</Link>
-              <Link href="/" className="hover:text-[#006B4F] transition">Trust & safety</Link>
-              <Link href="/" className="hover:text-[#006B4F] transition">Terms & privacy</Link>
-            </div>
-          </div>
+            <h3 className="text-sm font-black text-[#1f1b14]">Contact</h3>
 
-          <div>
-            <h3 className="text-sm font-bold text-[#1f1b14]">Contact</h3>
-
-            <div className="mt-4 space-y-3 text-sm text-[#5f5a50]">
+            <div className="mt-4 space-y-3 text-sm font-semibold text-[#3f3a32]">
               <div className="flex items-center gap-2">
-                <span className="text-[#006B4F]">✉</span>
+                <span className="font-bold text-[#006B4F]">✉</span>
                 <p>hello@studynook.co</p>
               </div>
 
               <div className="flex items-center gap-2">
-                <span className="text-[#006B4F]">✆</span>
+                <span className="font-bold text-[#006B4F]">✆</span>
                 <p>+1 (415) 555-0140</p>
               </div>
             </div>
@@ -98,7 +143,7 @@ const Footer = () => {
                   key={social.label}
                   href="/"
                   aria-label={social.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-[#006B4F]/15 bg-white/35 text-[#5f5a50] transition duration-300 hover:border-[#006B4F] hover:bg-[#006B4F] hover:text-white"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-[#006B4F]/15 bg-white/35 text-[#3f3a32] transition duration-300 hover:border-[#006B4F] hover:bg-[#006B4F] hover:text-white"
                 >
                   {social.icon}
                 </Link>
@@ -109,7 +154,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-[#006B4F]/10">
-        <div className="w-11/12 mx-auto flex flex-col md:flex-row items-center justify-between gap-3 py-5 text-xs md:text-sm text-[#5f5a50]">
+        <div className="w-11/12 mx-auto flex flex-col items-center justify-between gap-3 py-5 text-xs font-semibold text-[#3f3a32] md:flex-row md:text-sm">
           <p>© 2026 StudyNook, Inc. All rights reserved.</p>
           <p>Made for students, librarians, and quiet thinkers.</p>
         </div>
