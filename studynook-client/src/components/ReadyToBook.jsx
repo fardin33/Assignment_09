@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ReadyToBook = () => {
   return (
-    <section className="bg-[#f1f7f2] dark:bg-[#1e3a8a] py-16 md:py-20">
+    <section className=" dark:bg-[#1e3a8a] py-16 md:py-20">
       <div className="w-11/13 mx-auto overflow-hidden rounded-[2rem] border border-[#006B4F]/15  dark:bg-[#0f234f]/55 backdrop-blur-xl shadow-sm">
         <div className="relative px-6 py-14 md:px-10 md:py-20 text-center">
           <div className="absolute -top-20 left-1/2 h-60 w-60 -translate-x-1/2 rounded-full bg-[#006B4F]/15 blur-3xl" />
